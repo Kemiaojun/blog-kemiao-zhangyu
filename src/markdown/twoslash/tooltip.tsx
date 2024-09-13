@@ -15,12 +15,12 @@ export const TwoslashTooltip = (props: TwoslashTooltipProps) => {
 
   return (
     <Tooltip
-      placement='bottom left'
-      offset={4}
-      arrowBoundaryOffset={8}
-      shouldFlip={false}
-      className='shiki-twoslash max-w-[80vw] origin-top-left md:max-w-[90ch]'
       UNSTABLE_portalContainer={portalContainer}
+      arrowBoundaryOffset={8}
+      className='shiki-twoslash max-w-[80vw] origin-top-left md:max-w-[90ch]'
+      offset={4}
+      placement='bottom left'
+      shouldFlip={false}
     >
       <div className='not-prose rounded border bg-surface shadow-lg'>
         {!noArrow && (

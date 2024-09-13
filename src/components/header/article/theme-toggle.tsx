@@ -23,8 +23,8 @@ export const ThemeToggle = () => {
   return (
     <MenuTrigger>
       <Button
-        className='rounded p-1.5 outline-none transition-colors hover:bg-surface-1 pressed:bg-surface-1'
         aria-label='Menu'
+        className='rounded p-1.5 outline-none transition-colors hover:bg-surface-1 pressed:bg-surface-1'
       >
         <Icon className='size-5' />
       </Button>

@@ -220,13 +220,17 @@ export const Galton = memo<GaltonProps>(props => {
     }
   }
 
-  useEffect(() => {
-    if (!ref.current) {
-      return
-    }
+  useEffect(
+    () => {
+      if (!ref.current) {
+        return
+      }
 
-    return resetAndStart()
-  }, [])
+      return resetAndStart()
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [],
+  )
 
   return (
     <>

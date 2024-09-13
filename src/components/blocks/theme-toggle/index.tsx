@@ -10,8 +10,8 @@ const Cloud = tw.div`absolute size-1/5 rounded-full bg-gradient-to-b from-sky-10
 export function ThemeToggle() {
   return (
     <Block
-      data-type='setting'
       className='group overflow-hidden border-none bg-surface shadow-none transition-transform hover:scale-105 dark:bg-transparent dark:before:content-none'
+      data-type='setting'
     >
       <Toggle>
         <Cloud className='left-[15%] top-[10%] dark:-left-1/3' />

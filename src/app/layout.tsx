@@ -70,39 +70,39 @@ export default function RootLayout({ children }) {
   return (
     <html
       suppressHydrationWarning
-      lang='en'
       className={clsx(sans.variable, serif.variable, handwriting.variable)}
+      lang='en'
     >
       <head>
         <link
-          rel='icon'
-          type='image/png'
-          sizes='32x32'
           href='/icon/favicon-32x32.png'
-        />
-        <link
           rel='icon'
+          sizes='32x32'
           type='image/png'
-          sizes='16x16'
-          href='/icon/favicon-16x16.png'
         />
         <link
+          href='/icon/favicon-16x16.png'
+          rel='icon'
+          sizes='16x16'
+          type='image/png'
+        />
+        <link
+          href='/icon/apple-touch-icon.png'
           rel='apple-touch-icon'
           sizes='180x180'
-          href='/icon/apple-touch-icon.png'
         />
-        <link rel='manifest' href='/site.webmanifest' />
+        <link href='/site.webmanifest' rel='manifest' />
         <link
-          rel='icon'
-          type='image/png'
-          sizes='192x192'
           href='/icon/android-chrome-192x192.png'
+          rel='icon'
+          sizes='192x192'
+          type='image/png'
         />
         <link
-          rel='icon'
-          type='image/png'
-          sizes='512x512'
           href='/icon/android-chrome-512x512.png'
+          rel='icon'
+          sizes='512x512'
+          type='image/png'
         />
         <DarkToggleScript />
       </head>

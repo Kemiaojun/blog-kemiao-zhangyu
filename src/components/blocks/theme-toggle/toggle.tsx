@@ -5,7 +5,7 @@ export const Toggle = (props: { children: React.ReactNode }) => {
   const { children } = props
   const { toggle } = useDarkToggle()
   return (
-    <button className='size-full' aria-label='Theme Toggle' onClick={toggle}>
+    <button aria-label='Theme Toggle' className='size-full' onClick={toggle}>
       {children}
     </button>
   )

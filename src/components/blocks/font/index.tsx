@@ -9,8 +9,8 @@ const AnimateSpan = tw.span`hidden origin-bottom-right text-sm transition-transf
 export const Font = () => {
   return (
     <Block
-      data-type='setting'
       className='group grid grid-cols-3 grid-rows-4 items-center justify-items-center bg-surface-1 text-lg font-semibold text-color-1 lg:grid-cols-5 lg:grid-rows-6'
+      data-type='setting'
     >
       <AnimateSpan className='block'>Aa</AnimateSpan>
       <AnimateSpan className='block'>a</AnimateSpan>

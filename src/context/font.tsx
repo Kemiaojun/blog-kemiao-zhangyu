@@ -1,9 +1,10 @@
-import React, { createContext, useEffect, useState } from 'react'
+import { createContext, useEffect, useState } from 'react'
 
 import { isServer } from '@/utils'
 
 export type FontType = 'sans' | 'serif'
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const fontContext = createContext<[FontType, (font?: FontType) => void]>(
   ['sans', () => {}],
 )
@@ -20,9 +21,13 @@ if (!isServer()) {
 export const FontProvider = ({ children }: { children: React.ReactNode }) => {
   const [font, setFont] = useState<FontType>('sans')
 
-  useEffect(() => {
-    toggleFont(defaultFont)
-  }, [])
+  useEffect(
+    () => {
+      toggleFont(defaultFont)
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [],
+  )
 
   function toggleFont(next?: FontType) {
     const newFont =

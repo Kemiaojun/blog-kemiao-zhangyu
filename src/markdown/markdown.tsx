@@ -41,9 +41,6 @@ export async function Markdown(props: MarkdownProps) {
   const { source, useMDXComponents } = props
   return (
     <MDX
-      source={source}
-      useMDXComponents={useMDXComponents}
-      remarkPlugins={[remarkGfm]}
       rehypePlugins={[
         rehypeGithubAlert,
         rehypeSlug,
@@ -88,6 +85,9 @@ export async function Markdown(props: MarkdownProps) {
           } as RehypeShikiOptions,
         ],
       ]}
+      remarkPlugins={[remarkGfm]}
+      source={source}
+      useMDXComponents={useMDXComponents}
     />
   )
 }

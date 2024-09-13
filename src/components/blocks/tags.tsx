@@ -13,8 +13,8 @@ export const Tags = async () => {
 
   return (
     <Block
-      data-type='tags'
       className='col-span-2 flex flex-col overflow-clip bg-gradient-to-l from-amber-50 to-surface dark:from-surface-1 max-lg:row-span-2 sm:col-span-3 md:col-span-2 lg:col-span-4'
+      data-type='tags'
     >
       <h2 className='mb-4 flex items-center gap-4 text-2xl text-brand'>
         <IconTags />
@@ -26,8 +26,8 @@ export const Tags = async () => {
           return (
             <li key={name}>
               <Link
-                href={`/tags/${name}`}
                 className='flex items-center rounded-2xl px-1 py-0.5 text-sm shadow-sm md:gap-1 md:px-2 md:py-1 lg:text-base'
+                href={`/tags/${name}`}
                 style={{
                   backgroundColor: `#${color}33`,
                   border: `2px solid #${color}`,

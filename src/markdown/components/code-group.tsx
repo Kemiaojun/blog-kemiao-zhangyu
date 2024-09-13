@@ -35,13 +35,14 @@ const CodeGroup = (props: CodeGroupProps) => {
       <header className='flex border-b px-4'>
         {fileNames.map((fileName, i) => (
           <button
+            // eslint-disable-next-line react/no-array-index-key
+            key={i}
             className={clsx(
               'flex items-center justify-center border-b-2 px-4 py-2',
               i === index
                 ? 'border-brand text-brand'
                 : 'border-transparent text-color-3',
             )}
-            key={i}
             onClick={() => setIndex(i)}
           >
             {fileName}

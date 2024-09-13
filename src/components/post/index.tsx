@@ -37,13 +37,13 @@ export const Post = async (props: PostProps) => {
 
   return (
     <Block
-      data-type='posts'
       className='group grid grid-rows-[1fr_min-content_2fr] bg-gradient-to-b from-surface-1 to-white dark:bg-[linear-gradient(rgba(255,255,255,0.05)_0%,rgba(255,255,255,0)_100%)] max-lg:p-2 max-md:row-span-2 max-sm:col-span-2 max-sm:row-span-1 xl:grid-rows-[1fr_min-content_2fr_auto]'
+      data-type='posts'
     >
       <div className='row-span-4 grid grid-rows-subgrid gap-1 xl:gap-2'>
         <Link
-          className='relative flex items-center text-balance text-sm font-bold lg:text-base xl:text-xl'
           aria-label={`Post ${node.title}`}
+          className='relative flex items-center text-balance text-sm font-bold lg:text-base xl:text-xl'
           href={`/posts/${number}`}
         >
           <h2>
@@ -62,8 +62,8 @@ export const Post = async (props: PostProps) => {
             <Link
               key={node.id}
               aria-label={`Tag ${node.name}`}
-              href={`/tags/${node.name}`}
               className='relative inline-flex items-center px-1 text-xs underline-offset-1 before:absolute before:-inset-x-0 before:-inset-y-4 before:content-["_"] after:content-[",_"] first:pl-0 last:after:content-none hover:underline'
+              href={`/tags/${node.name}`}
             >
               <IconHash className='size-2.5' />
               {node.name}
@@ -73,8 +73,8 @@ export const Post = async (props: PostProps) => {
         <p className='text-xs dark:text-color-4 xl:text-sm'>{currentSummary}</p>
         <p className='flex justify-end max-xl:hidden'>
           <Link
-            className='translate-y-2 items-center rounded-full border bg-surface px-2.5 py-1.5 font-semibold opacity-0 outline-offset-4 ring-surface-3 transition-all duration-700 ease-out hover:scale-105 hover:border-transparent hover:ring-4 group-hover:translate-y-0 group-hover:opacity-100 focus-visible:translate-y-0 focus-visible:opacity-100'
             aria-label={`Read more about ${node.title}`}
+            className='translate-y-2 items-center rounded-full border bg-surface px-2.5 py-1.5 font-semibold opacity-0 outline-offset-4 ring-surface-3 transition-all duration-700 ease-out hover:scale-105 hover:border-transparent hover:ring-4 group-hover:translate-y-0 group-hover:opacity-100 focus-visible:translate-y-0 focus-visible:opacity-100'
             href={`/posts/${number}`}
           >
             Read more <span className='sr-only'>about {node.title}</span>

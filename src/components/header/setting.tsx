@@ -13,10 +13,10 @@ export const Setting = () => {
 
   return (
     <Link
+      aria-label='Setting'
       className={clsx(
         'justify-self-end rounded-full bg-surface-2 p-1 shadow-inner dark:bg-surface-1 max-sm:hidden',
       )}
-      aria-label='Setting'
       href='/setting'
     >
       <IconSettings

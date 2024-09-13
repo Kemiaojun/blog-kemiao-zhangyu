@@ -3,14 +3,14 @@ import { ExternalLink } from '@/components/external-link'
 
 export const Juejin = () => (
   <Block
-    data-type='about'
     className='group flex items-center justify-center bg-gradient-to-b from-blue-200 to-white text-black dark:from-blue-300/80 dark:to-white/70'
+    data-type='about'
   >
     <svg
       className='size-24 dark:grayscale-[20%] xl:size-32'
-      width='1em'
       height='1em'
       viewBox='0 0 38 38'
+      width='1em'
       xmlns='http://www.w3.org/2000/svg'
     >
       <path
@@ -19,6 +19,6 @@ export const Juejin = () => (
         fillRule='evenodd'
       />
     </svg>
-    <ExternalLink title='掘金' href='https://juejin.cn/user/4089838986339927' />
+    <ExternalLink href='https://juejin.cn/user/4089838986339927' title='掘金' />
   </Block>
 )

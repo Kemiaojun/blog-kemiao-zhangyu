@@ -18,8 +18,8 @@ export const Pinned = async () => {
 
   return (
     <Block
-      data-type='projects'
       className='z-10 col-span-2 row-span-5 flex flex-col border-none bg-paper !p-0 font-handwriting shadow-md dark:bg-paper-dark sm:col-span-3 sm:row-span-4 md:row-span-2 xl:col-span-2'
+      data-type='projects'
     >
       <h2 className='flex items-center gap-2 pl-[10%] pt-4 text-2xl font-bold text-brand xl:pt-6'>
         <IconPinFilled className='size-6' />
@@ -33,10 +33,11 @@ export const Pinned = async () => {
           return (
             <a
               key={item.url}
-              href={item.url}
-              target='_blank'
-              style={{ transform: `rotate(${rotate}deg)` }}
               className='group/note relative z-10 flex flex-col border-transparent p-4 text-xs transition-transform before:absolute before:inset-x-[3%] before:bottom-[15%] before:top-3/4 before:-z-20 before:skew-y-[5deg] before:shadow-[0_15px_10px_rgba(0,0,0,.6)] before:transition-transform before:duration-500 before:content-["_"] after:absolute after:inset-x-[3%] after:bottom-[15%] after:top-3/4 after:-skew-y-[5deg] after:shadow-[0_15px_10px_rgba(0,0,0,.6)] after:transition-transform after:duration-500 after:content-["_"] hover:before:scale-[1.03] hover:after:scale-[1.03]'
+              href={item.url}
+              rel='noreferrer'
+              style={{ transform: `rotate(${rotate}deg)` }}
+              target='_blank'
             >
               <div
                 className={clsx(

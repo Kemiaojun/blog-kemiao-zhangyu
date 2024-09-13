@@ -25,9 +25,8 @@ export const ExploreMore = (props: ExploreMoreProps) => {
       onMouseLeave={() => setEnter(false)}
     >
       <MotionWave
-        width={280}
-        height={280}
         className='z-0 size-full rounded-xl bg-surface-1 dark:bg-surface dark:fill-surface-1 lg:rounded-2xl xl:rounded-3xl'
+        height={280}
         initialConfig={{
           amplitude: 30,
           frequency: 0.4,
@@ -56,6 +55,7 @@ export const ExploreMore = (props: ExploreMoreProps) => {
             value: 6,
           },
         }}
+        width={280}
       />
       <Link
         className='absolute inset-0 z-10 flex items-center justify-center gap-2 text-lg font-semibold text-white mix-blend-difference lg:text-2xl'

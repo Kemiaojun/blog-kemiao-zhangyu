@@ -15,14 +15,14 @@ export function GiscusScript(props: GiscusScriptProps) {
   return (
     <div className='mt-32'>
       <Giscus
-        repo={repo}
-        repoId='MDEwOlJlcG9zaXRvcnkzMjk0OTk1NjU='
-        mapping='number'
-        term={`${number}`}
-        reactionsEnabled='1'
         emitMetadata='0'
         inputPosition='top'
         lang='en'
+        mapping='number'
+        reactionsEnabled='1'
+        repo={repo}
+        repoId='MDEwOlJlcG9zaXRvcnkzMjk0OTk1NjU='
+        term={`${number}`}
         theme={isDark ? 'dark' : 'light'}
       />
     </div>

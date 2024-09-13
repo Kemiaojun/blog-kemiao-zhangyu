@@ -129,11 +129,11 @@ export default async function Page({ params }: PageProps) {
           TABLE OF CONTENTS
         </h2>
         <TOC
+          a='data-[active=true]:text-brand dark:data-[active=true]:text-white block text-sm mb-2'
+          className='space-y-3 dark:text-color-4'
           markdown={body!}
           throttleTime={100}
-          className='space-y-3 dark:text-color-4'
           ul='pl-6 space-y-2'
-          a='data-[active=true]:text-brand dark:data-[active=true]:text-white block text-sm mb-2'
         />
       </aside>
     </main>

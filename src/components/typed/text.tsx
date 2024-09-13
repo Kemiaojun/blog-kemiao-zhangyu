@@ -24,41 +24,45 @@ export const TypedText = (props: TypedTextProps) => {
   const ref = useRef<HTMLElement | null>(null)
   const isServer = useIsServer()
 
-  useEffect(() => {
-    if (typeof children !== 'string') {
-      return
-    }
-    ref.current?.scrollIntoView({ behavior: 'smooth' })
-    let cancel = false
-    let id: number
-    const typed = () => {
-      if (!ref.current || cancel) {
+  useEffect(
+    () => {
+      if (typeof children !== 'string') {
         return
       }
-      const text = children.trim()
-      const stringArr = Array.from(
-        text.replace(ref.current.textContent!.trim(), ''),
-      )
-      let index = 0
-      id = window.setInterval(() => {
-        if (!ref.current || index === stringArr.length) {
-          window.clearInterval(id)
-          sleep(afterDelay).then(onRendered)
+      ref.current?.scrollIntoView({ behavior: 'smooth' })
+      let cancel = false
+      let id: number
+      const typed = () => {
+        if (!ref.current || cancel) {
           return
         }
-        ref.current.textContent += stringArr[index++]
-      }, 150)
-    }
-    if (beforeDelay) {
-      sleep(beforeDelay).then(typed)
-    } else {
-      typed()
-    }
-    return () => {
-      cancel = true
-      window.clearInterval(id)
-    }
-  }, [])
+        const text = children.trim()
+        const stringArr = Array.from(
+          text.replace(ref.current.textContent!.trim(), ''),
+        )
+        let index = 0
+        id = window.setInterval(() => {
+          if (!ref.current || index === stringArr.length) {
+            window.clearInterval(id)
+            sleep(afterDelay).then(onRendered)
+            return
+          }
+          ref.current.textContent += stringArr[index++]
+        }, 150)
+      }
+      if (beforeDelay) {
+        sleep(beforeDelay).then(typed)
+      } else {
+        typed()
+      }
+      return () => {
+        cancel = true
+        window.clearInterval(id)
+      }
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    [],
+  )
 
   if (isServer) {
     return (
@@ -76,7 +80,7 @@ export const TypedText = (props: TypedTextProps) => {
         'font-bold italic': !active,
       })}
     >
-      <span hidden={!active} className='text-sky-400'>
+      <span className='text-sky-400' hidden={!active}>
         ~
       </span>
       <IconChevronRight className='size-3.5 text-green-400' />

@@ -1,5 +1,5 @@
 'use client'
 
-export * from './typed'
-export * from './text'
-export * from './content'
+export { Typed } from './typed'
+export { TypedText } from './text'
+export { TypedContent } from './content'

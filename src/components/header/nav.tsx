@@ -71,12 +71,13 @@ export const Nav = () => {
           const linkUrl = tab === 'all' ? '' : tab
           return (
             <li
+              // eslint-disable-next-line react/no-array-index-key
               key={`${name}-${index}`}
+              aria-label={tab}
               className={clsx(
                 'px-2.5 py-1 transition-colors duration-1000 ease-out sm:px-4',
                 tab === currentSelected ? 'text-brand' : 'text-color-3',
               )}
-              aria-label={tab}
               data-name={tab}
             >
               <Link prefetch href={`/${linkUrl}`}>
