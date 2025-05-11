@@ -2,11 +2,17 @@ import dynamic from 'next/dynamic'
 import type { StaticImageData } from 'next/image'
 
 import { Block } from '@/components/blocks/block'
+import aiSvg from '@/images/logo/ai.svg'
+import chiSvg from '@/images/logo/chi.svg'
 import cssSvg from '@/images/logo/css.svg'
 import gatsbySvg from '@/images/logo/gatsby.svg'
 import graphqlSvg from '@/images/logo/graphql.svg'
 import htmlSvg from '@/images/logo/html.svg'
 import javascriptSvg from '@/images/logo/javascript.svg'
+import keSvg from '@/images/logo/ke.svg'
+import luSvg from '@/images/logo/lu.svg'
+import mianSvg from '@/images/logo/mian.svg'
+import miaoSvg from '@/images/logo/miao.svg'
 import nestjsSvg from '@/images/logo/nestjs.svg'
 import nextjsSvg from '@/images/logo/nextjs.svg'
 import nodejsSvg from '@/images/logo/nodejs.svg'
@@ -42,6 +48,12 @@ const images: StaticImageData[] = [
   prismaSvg,
   graphqlSvg,
   telegramSvg,
+  keSvg,
+  miaoSvg,
+  aiSvg,
+  chiSvg,
+  luSvg,
+  mianSvg,
 ]
 export const Skills = () => {
   return (
