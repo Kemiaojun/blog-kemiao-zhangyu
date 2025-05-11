@@ -104,7 +104,7 @@ export default function Page() {
                 <span>联系</span>
               </div>
             </TypedContent>
-            <TypedText afterDelay={700}>opensource</TypedText>
+            <TypedText afterDelay={700}>资源分享</TypedText>
             <TypedContent>
               <p>
                 我的资源皆来源于网络，更新的也一般是根据我觉得常用的资源，所以可能更贴近我的圈子，有什么想找的资源可以联系我，看到会找，

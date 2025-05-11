@@ -19,6 +19,6 @@ export const Juejin = () => (
         fillRule='evenodd'
       />
     </svg>
-    <ExternalLink href='https://juejin.cn/user/4089838986339927' title='掘金' />
+    <ExternalLink href='https://juejin.cn/user/2270912510955849' title='掘金' />
   </Block>
 )
