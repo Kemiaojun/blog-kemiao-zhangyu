@@ -46,132 +46,187 @@ export default function Page() {
             <Dot className='cursor-not-allowed bg-yellow-400' />
             <Dot className='cursor-not-allowed bg-green-500' />
           </span>
-          <span className='text-center text-gray-400'>
-            zhangyu@MacBook-Air:~
-          </span>
+          <span className='text-center text-gray-400'>me@kemiaosw.top:~</span>
           <span className='text-end text-gray-500'>⌥⌘1</span>
         </header>
         <div className='min-h-60 flex-1 overflow-y-auto p-2 text-sm text-gray-200 duration-300 animate-in fade-in'>
-          <p className='mb-2'>Last login: {lastBuildTime} on ttys003</p>
+          <p className='mb-2'>Last login: {lastBuildTime} on Github</p>
           <Typed>
-            <TypedText>whoami</TypedText>
+            <TypedText>who am i</TypedText>
             <TypedContent>
               <p>
-                Hi, I&apos;m <strong>ZHANG YU</strong>, in Chinese my name is{' '}
-                <strong>张宇</strong>.
+                Hi, I&apos;am <strong>Ke Miao</strong>, in Chinese my name is{' '}
+                <strong>克喵爱吃卤面</strong>.
               </p>
               <p>
-                I am a senior front-end engineer who have been involving in
-                front-end development since <strong>2018</strong>, focusing on
-                building aesthetically pleasing and highly interactive user
-                interfaces by <code>React</code>.
+                我是一个普通的大二学生，目前在南京就读双非二本学校，专业是自动化，于
+                <strong>2023年</strong>开始大学生活，
+                于当年在小绿书接触逆向资源，并开始学习逆向工程的相关知识，现在还是菜鸟一个；
+                <strong>2024年</strong>受不了小编的小杯操作而转战Telegram；
+                在这里获得了不少好用的资源，并在这里认识了众多大佬。在大佬
+                <a
+                  href='https://t.me/txwl666'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                >
+                  @txwl666 (资源分享)
+                </a>
+                和
+                <a
+                  href='https://t.me/haoruanfenxiang'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                >
+                  @haoruanfenxiang (好软分享)
+                </a>
+                这些大佬的指引下，于<strong>24年11月</strong>
+                开始了我的资源分享之旅。
               </p>
               <p>
-                I have amassed substantial practical experience in the{' '}
-                <code>React</code> technology stack.
+                当月我开始部署博客，我遇到的第一款博客当然是与TG有关的
+                <a
+                  href='https://github.com/ccbikai/BroadcastChannel'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                >
+                  博客
+                </a>
+                后续我陆陆续续尝试了许多种类的博客，并于
+                <strong>25年5月11日</strong>搭建了这个博客！
               </p>
             </TypedContent>
             <TypedText afterDelay={1000}>ls</TypedText>
             <TypedContent>
               <div className='grid grid-cols-2 gap-2 px-4 font-semibold text-sky-500'>
-                <span>opensource</span>
-                <span>projects</span>
-                <span>blog-info</span>
-                <span>experience</span>
-                <span>skills</span>
-                <span>contact</span>
+                <span>资源分享</span>
+                <span>我的项目</span>
+                <span>博客介绍</span>
+                <span>联系</span>
               </div>
             </TypedContent>
             <TypedText afterDelay={700}>opensource</TypedText>
             <TypedContent>
               <p>
-                I am passionate about contributing to the open-source community,
-                having made multiple contributions to well-known projects such
-                as <code>Ant Design</code>.
+                我的资源皆来源于网络，更新的也一般是根据我觉得常用的资源，所以可能更贴近我的圈子，有什么想找的资源可以联系我，看到会找，
+                <strong>但不保证能找到</strong>。<strong>开源项目</strong>，承诺
+                <strong>不会私自修改任何部分</strong>！
               </p>
               <p>
-                Additionally, I have developed and maintained lots of
-                open-source projects, which have been successfully published on
-                npm and collectively garnered nearly <i>20,000</i> downloads.
+                我的资源主要在我的telegram频道里：
+                <a
+                  href='https://t.me/kemiaofx_me'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                >
+                  我的资源频道
+                </a>
+                和
+                <a
+                  href='https://t.me/kemiaosw_me'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                >
+                  我的软件库
+                </a>
+                。除了我的频道外，你还可以在我的
+                <a
+                  href='https://github.com/Kemeow815/kemiaofx'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                >
+                  仓库
+                </a>
+                里找到我分享的资源。希望我的项目能帮到你！
               </p>
             </TypedContent>
-            <TypedText afterDelay={1000}>projects</TypedText>
+            <TypedText afterDelay={1000}>我的项目</TypedText>
             <TypedContent>
               <ul>
                 <li>
                   <strong>
-                    <a href='https://github.com/zhangyu1818/react-markdown-toc'>
-                      react-markdown-toc
+                    <a href='https://github.com/Kemeow815/kemiaofx'>
+                      克喵的资源库
                     </a>
                   </strong>
                 </li>
-                <li>Generating a Table of Contents (TOC) from Markdown.</li>
+                <li>记录我的资源分享仓库。</li>
               </ul>
               <ul>
                 <li>
                   <strong>
-                    <a href='https://github.com/zhangyu1818/from-to'>
-                      from-to.js
+                    <a href='https://github.com/Kemeow815/HeoMusic'>
+                      克喵的网页音乐播放器
                     </a>
                   </strong>
                 </li>
-                <li>Transitioning from one value to another.</li>
+                <li>基于HeoMusic的音乐播放器。</li>
               </ul>
               <ul>
                 <li>
                   <strong>
-                    <a href='https://github.com/zhangyu1818/react-server-only-context'>
-                      react-server-only-context
+                    <a href='https://github.com/Kemeow815/blog-v3'>
+                      克喵的主博客
                     </a>
                   </strong>
                 </li>
-                <li>
-                  A straightforward alternative for using context within React
-                  Server Components.
-                </li>
+                <li>nuxt全栈博客</li>
               </ul>
               <ul>
                 <li>
                   <strong>
-                    <a href='https://github.com/zhangyu1818/tw-styled'>
-                      tw-styled
+                    <a href='https://github.com/Kemeow815/BroadcastChannel'>
+                      克喵的TG说说
                     </a>
                   </strong>
                 </li>
-                <li>
-                  Create Tailwind CSS-styled React components with ease using
-                  tw-styled.
-                </li>
+                <li>基于BroadcastChannel的TG说说</li>
               </ul>
               <ul>
                 <li>
                   <strong>
-                    <a href='https://github.com/zhangyu1818/use-flip'>
-                      use-flip
+                    <a href='https://github.com/Kemeow815/DailyHot-kemiao'>
+                      克喵的今日热榜
                     </a>
                   </strong>
                 </li>
-                <li>
-                  Effortless FLIP animations with a React Hook for smoother
-                  transitions.
-                </li>
+                <li>克喵的今日热榜</li>
               </ul>
             </TypedContent>
-            <TypedText>blog-info</TypedText>
+            <TypedText>博客介绍</TypedText>
             <TypedContent>
               <p>
-                I am keen on sharing knowledge as well as writing articles and
-                tutorials regularly, covering <code>JavaScript</code>,
-                <code>TypeScript</code>, <code>React</code> source-code,{' '}
-                <code>CSS</code>, and animation.
+                这个博客是就nextjs搭建的博客，博客文章在仓库的
+                <a
+                  href='https://github.com/Kemiaojun/blog-kemiao-zhangyu/discussions'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                >
+                  discussion
+                </a>
+                里，我的博客源码在
+                <a
+                  href='https://github.com/Kemeow815/blog-kemiao'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                >
+                  这里
+                </a>
+                。你可以根据作者的
+                <a
+                  href='https://www.bilibili.com/video/BV15Z421476R/'
+                  rel='noopener noreferrer'
+                  target='_blank'
+                >
+                  B站视频
+                </a>
+                来部署它。
               </p>
               <p>
-                My articles have been read over <i>150,000</i> times.
-                Previously, I primarily wrote in Chinese, but currently, my goal
-                is to write articles in English.
+                我的博客主要是分享踩坑教程、各类资源和生活记录，转载文章会有标识原链接，如果我的文章侵犯了你的权益，请联系我删除。
+                同样，如果我的资源不符合作者的权益，也请联系我删除。
               </p>
             </TypedContent>
-            <TypedText>experience</TypedText>
+            {/* <TypedText>experience</TypedText>
             <TypedContent>
               <p>Until now, I have worked for two companies only.</p>
               <p>
@@ -207,22 +262,24 @@ export default function Page() {
                 Furthermore, I have experience in mobile App development using
                 <code>React Native</code> and <code>SwiftUI</code>.
               </p>
-            </TypedContent>
-            <TypedText>Contact</TypedText>
+            </TypedContent> */}
+            <TypedText>联系</TypedText>
             <TypedContent>
               <div className='my-4 flex items-center'>
                 <p className='basis-1/4 text-center font-semibold'>Social</p>
                 <div className='grid flex-1 grid-cols-2 justify-items-start gap-2'>
-                  <a href='https://github.com/zhangyu1818'>Github</a>
-                  <a href='https://twitter.com/zhangyu1818'>Twitter</a>
-                  <a href='https://juejin.cn/user/4089838986339927'>掘金</a>
-                  <a href='https://dev.to/zhangyu1818'>Dev.to</a>
-                  <a href='https://medium.com/@zhangyu1818'>Medium</a>
+                  <a href='https://github.com/Kemeow815'>Github</a>
+                  <a href='https://twitter.com/kemiaosw'>Twitter</a>
+                  <a href='https://juejin.cn/user/2270912510955849'>掘金</a>
+                  <a href='https://t.me/KemiaoJun'>Telegram</a>
+                  <a href='https://music.163.com/#/playlist?id=13681647281'>
+                    网易云
+                  </a>
                 </div>
               </div>
               <div className='flex items-center'>
                 <p className='basis-1/4 text-center font-semibold'>Email</p>
-                <a href='mailto:hey@zhangyu.dev'>hey@zhangyu.dev</a>
+                <a href='mailto:me@kemiaosw.top'>me@kemiaosw.top</a>
               </div>
             </TypedContent>
           </Typed>

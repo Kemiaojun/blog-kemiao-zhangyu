@@ -15,7 +15,7 @@ export const ResumeText = () => {
       backSpeed: 100,
       cursorChar: '_',
       loop: true,
-      strings: ['ls^100 resume ^500', 'vim ^1000', 'cat resume ^2000'],
+      strings: ['I am^100 克喵爱吃卤面 ^500', 'Hello ^1000', 'Everyone ^2000'],
       typeSpeed: 150,
     })
     return () => {
