@@ -58,8 +58,8 @@ export const metadata: Metadata = {
   ],
   publisher: '克喵爱吃卤面',
   title: {
-    absolute: 'www.kemiao.site',
-    template: '%s | www.kemiao.site',
+    absolute: '喵落阁',
+    template: '%s | 喵落阁',
   },
   verification: {
     google: 'ULSANpODFw1TULe1QTOUFT8z8QXPVIA1MRTMQL7PAbw',
