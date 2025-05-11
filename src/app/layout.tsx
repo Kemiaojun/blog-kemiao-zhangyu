@@ -44,8 +44,7 @@ export const metadata: Metadata = {
     url: 'https://github.com/Kemeow815',
   },
   creator: '克喵爱吃卤面',
-  description:
-    '愿你看清一切真相后，依旧热爱你的家人和朋友。',
+  description: '愿你看清一切真相后，依旧热爱你的家人和朋友。',
   generator: 'Next.js',
   keywords: [
     'kemiao',
